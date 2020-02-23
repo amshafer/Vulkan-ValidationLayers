@@ -4530,4 +4530,16 @@ void PostCallRecordResetQueryPoolEXT(
     VkQueryPool                                 queryPool,
     uint32_t                                    firstQuery,
     uint32_t                                    queryCount);
+
+void PostCallRecordGetPhysicalDeviceDisplayPropertiesKHR(
+    VkPhysicalDevice 				physicalDevice,
+    uint32_t 					*pPropertyCount,
+    VkDisplayPropertiesKHR 			*pProperties,
+    VkResult 					result);
+
+void PostCallRecordGetPhysicalDeviceDisplayProperties2KHR(
+    VkPhysicalDevice 				physicalDevice,
+    uint32_t 					*pPropertyCount,
+    VkDisplayProperties2KHR 			*pProperties,
+    VkResult 					result);
 };
